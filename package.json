@@ -1,0 +1,24 @@
+{
+  "name": "express-skeleton",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app",
+    "dev": "./node_modules/.bin/nodemon app",
+    "prd": "pm2 start app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "dotenv": "^6.1.0",
+    "ejs": "~2.6.1",
+    "express": "~4.16.0",
+    "joi": "^14.3.0",
+    "jsonwebtoken": "^8.4.0",
+    "moment": "^2.22.2",
+    "nodemailer": "^4.7.0",
+    "pg": "^7.7.1",
+    "winston": "^3.1.0",
+    "winston-daily-rotate-file": "^3.5.1"
+  }
+}
