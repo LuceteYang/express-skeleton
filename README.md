@@ -18,7 +18,7 @@ $ git clone https://github.com/LuceteYang/express-skeleton.git your-project-name
 $ cd your-project-name
 $ rm -rf .git && git init
 $ cp .env.copy .env
-$ mv README.md README_TEMP.md && echo "# your-project-name" >> REAMDE.md
+$ mv README.md README_TEMP.md && echo "# your-project-name" >> README.md
 ```
 
 ```zsh
