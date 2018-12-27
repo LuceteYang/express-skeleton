@@ -14,7 +14,7 @@
 
 ```zsh
 $ mkdir your-project-name
-$ git clone https://github.com/LuceteYang/koa-skeleton.git your-project-name
+$ git clone https://github.com/LuceteYang/express-skeleton.git your-project-name
 $ cd your-project-name
 $ rm -rf .git && git init
 $ cp .env.copy .env
