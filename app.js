@@ -21,7 +21,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(logger.logMiddleWare);
 
-app.use('/api', api);
+app.use('/', api);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -38,11 +38,10 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
-const port = process.env.PORT || 4000; // default port 4000
 
-app.listen(port, () => {
+app.listen(process.env.PORT, () => {
   logger.info(
-    `${process.env.name || "devApiServer"} is listening to port ${port}`
+    `${process.env.NAME} is listening to port ${process.env.PORT}`
   );
 });
 

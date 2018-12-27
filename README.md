@@ -18,6 +18,7 @@ $ git clone https://github.com/LuceteYang/express-skeleton.git your-project-name
 $ cd your-project-name
 $ rm -rf .git && git init
 $ cp .env.copy .env
+$ mv README.md README_TEMP.md && echo "# your-project-name" >> REAMDE.md
 ```
 
 ```zsh
@@ -52,7 +53,31 @@ method status user url timestamp responsetime ip param st level message
 
 ![log_sample](./public/images/log_sample.png)
 
+## Test
+
+- mailer test
+```zsh
+$ npm run prd
+```
+then mailer will send to your mail
+
+- db test
+```zsh
+$ npm install
+$ npm start
+```
+>check  
+>http://localhost:4000/  
+>http://localhost:4000/string  
+>http://localhost:4000/json?username=yang&email=abc@def.com&password=111111  
+>http://localhost:4000/db-connect  
+=> [{"name":"yang"}] then db connect
 
 
+- logger test
 
+```zsh
+$ npm run prd
+```
+then log file will be created in logs folder.
 

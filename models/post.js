@@ -5,7 +5,7 @@ exports.getPosts = async () => {
   let res;
   try {
     const result = await client.query(
-      'select $1::text as name', ['brianc']
+      'select $1::text as name', ['yang']
     );
     res = result.rows;
   } catch (err) {
